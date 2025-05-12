@@ -35,11 +35,3 @@ for epoch in range(5):
     print(f"Epoch {epoch+1} done.")
 
 print("Finished Training")
-
-# Optional visualization of a batch
-dataiter = iter(dataloader)
-images, labels = next(dataiter)
-img_grid = torchvision.utils.make_grid(images)
-plt.imshow(img_grid.permute(1, 2, 0))
-plt.title('Sample Batch')
-plt.show()
